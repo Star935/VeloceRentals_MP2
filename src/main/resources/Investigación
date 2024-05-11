@@ -1,0 +1,21 @@
+pool.setInitialSize(3);: Esto establece el número inicial de conexiones que se crearán cuando se inicialice el pool.
+En este caso, son 3 conexiones.
+
+pool.setMinIdle(3);: Esto establece el número mínimo de conexiones inactivas que el pool debe mantener.
+Una vez que el pool se haya inicializado con 3 conexiones, mantendrá al menos 3 conexiones inactivas, incluso si no se están utilizando.
+
+pool.setMaxIdle(8);: Esto establece el número máximo de conexiones inactivas permitidas en el pool.
+
+@Dependent: Este alcance indica que la duración del objeto depende del componente que lo inyecta. En otras palabras, el ciclo de vida del objeto depende del ciclo de vida del componente que lo usa.
+
+@RequestScoped: Este alcance indica que el objeto estará disponible durante el tiempo de procesamiento de una única solicitud HTTP. Una vez que se completa la solicitud, el objeto será destruido.
+
+@SessionScoped: Este alcance indica que el objeto estará disponible mientras dure la sesión del usuario en la aplicación. Se crea cuando se inicia la sesión y se destruye cuando la sesión finaliza.
+
+@ConversationScoped: Este alcance es similar a @SessionScoped, pero está destinado a ser utilizado en aplicaciones que hacen uso del contexto de conversación, como en aplicaciones web que implementan el patrón de navegación basado en conversaciones. El objeto estará disponible mientras dure una conversación específica entre el usuario y la aplicación.
+
+@ApplicationScoped: Este alcance indica que el objeto estará disponible durante toda la duración de la aplicación. Se crea cuando se inicia la aplicación y se destruye cuando la aplicación se detiene o se elimina.
+
+@Retention: Indica por cuánto tiempo estará disponible una anotación
+@Target: Especifica en qué elementos del programa se puede aplicar una anotación
+@Qualifier: Permite distinguir entre diferentes implementaciones de la misma interfaz al realizar inyecciones de dependencia, calificando qué bean se debe inyectar en un punto específico.
