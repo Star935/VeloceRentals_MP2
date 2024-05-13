@@ -16,5 +16,4 @@ public class Vehiculo {
     private String placa;
     private Integer precio_por_dia;
     private EstadoVehiculo disponibilidad;
-
 }

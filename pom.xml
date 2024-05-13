@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>co.edu.cue.jdbc</artifactId>
+    <artifactId>VeloceRentalsProyect</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>VeloceRentalsProyect</name>
+    <packaging>war</packaging>
 
     <dependencies>
         <!-- Dependencia MySQL Connector -->
@@ -64,8 +66,9 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>7.0.47</version>
+            <version>10.1.20</version>
         </dependency>
+
     </dependencies>
 
     <properties>
